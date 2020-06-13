@@ -1,0 +1,196 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#ff7a12df">
+    <EditText
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:layout_marginLeft="120dp"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="0.0dp"
+        android:inputType="number"
+        android:layout_alignRight="@id/editText" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/editText"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120.0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0.0dp"
+        android:layout_alignRight="@id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/editText1"
+        android:layout_marginTop="20.0dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="0.0dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:layout_width="120.5dp"
+        android:layout_height="38.5dp"
+        android:text="Часы"
+        android:layout_marginRight="0.0dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="30dp"
+        android:textFontWeight="20dp"
+        android:layout_marginTop="12.5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="119.0dp"
+        android:layout_height="39.5dp"
+        android:text="Минуты"
+        android:textSize="20sp"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="27.5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffffff" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Секунды"
+        android:textSize="20sp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="27.5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ffededed" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/editText"
+        android:id="@+id/spinner1"
+        android:layout_marginTop="91.5dp"
+        android:layout_marginLeft="0.0dp"
+        android:spinnerMode="dropdown"
+        android:layout_toLeftOf="@id/editText4"
+        android:layout_marginRight="0.0dp"
+        android:layout_marginBottom="50.5dp"
+        android:layout_centerInParent="false" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginRight="25.0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editText4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Напечатать"
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="24.0dp"
+        android:layout_marginLeft="29.0dp"
+        android:textStyle="normal"
+        android:layout_marginRight="11.0dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginRight="25.0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="20.0dp"
+        android:layout_below="@id/editText2"
+        android:layout_alignParentLeft="false" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="61.0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginRight="25.0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_toLeftOf="@id/editText1"
+        android:layout_marginTop="20.0dp"
+        android:layout_alignRight="@id/editText4"
+        android:layout_alignLeft="@id/editText4"
+        android:layout_toRightOf="@id/editText4" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="174.5dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Произвести операцию"
+        android:layout_below="@id/editText3"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="24.0dp"
+        android:layout_marginLeft="0.0dp"
+        android:textStyle="normal"
+        android:layout_marginRight="0.0dp"
+        android:layout_toRightOf="@id/button"
+        android:layout_marginBottom="46.0dp" />
+    <TextView
+        android:text="0:0:0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:id="@+id/textView5"
+        android:layout_marginTop="0.0dp"
+        android:layout_marginBottom="1.0dp"
+        android:textColor="#ffffffff"
+        android:textSize="50sp"
+        android:layout_centerInParent="true" />
+    <Button
+        android:text="Перевести это время"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:id="@+id/button2"
+        android:layout_marginTop="34.0dp" />
+    <Button
+        android:text="Очистить все поля"
+        android:layout_width="197.0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button2"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="34.0dp" />
+</RelativeLayout>
